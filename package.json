@@ -1,0 +1,20 @@
+{
+  "name": "retail-site",
+  "version": "1.0.0",
+  "description": "Building a basic react website that that allows user to add items for sale, complete with MongoDB backend for poersistence",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.1",
+    "nodemon": "^3.1.10"
+  }
+}
