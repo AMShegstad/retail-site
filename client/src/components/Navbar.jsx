@@ -21,7 +21,7 @@ const Navbar = () => {
             <Text
                 fontSize={{ base: "22", sm: "28"}}
                 fontWeight={"bold"}
-                textTransform={"uppsercase"}
+                textTransform={"uppercase"}
                 textAlign={"center"}
                 bgGradient={"linear(to-l, #7928CA, #FF0080)"}
                 bgClip={"text"}
