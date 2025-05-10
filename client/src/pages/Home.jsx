@@ -48,7 +48,7 @@ const Home = () => {
   };
 
   return (
-    <Container masW="container.xl" py={12}>
+    <Container maxW="container.xl" py={12}>
       <VStack spacing={8}>
         <Text
           fontSize={"30"}

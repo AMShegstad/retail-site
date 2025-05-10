@@ -27,7 +27,7 @@ const Navbar = () => {
                 bgClip={"text"}
             >
                 
-                <Link to={"/"}>Product Store <FaShoppingCart style={{ verticalAlign: "middle", marginLeft: "5px" }}/> </Link>
+                <Link to={"/"}>Shegstad Engraving & Printing <FaShoppingCart style={{ verticalAlign: "middle", marginLeft: "5px" }}/> </Link>
             </Text>
             
             <HStack spacing={2} alignItems={"center"}>
