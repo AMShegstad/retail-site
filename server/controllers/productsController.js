@@ -15,7 +15,7 @@ export const getProductById = async (req, res) => {
         const {id} = req.params;
         const product = await Product.findById(id);
         if (!product) {
-            return res.status(404).json({ success: false, message: "Productn ot found" });
+            return res.status(404).json({ success: false, message: "Product not found" });
         }
         res.status(200).json({success: true, data: product});
     } catch(err) {
@@ -29,7 +29,7 @@ export const createProduct = async (req, res) => {
     if (!product.name || !product.price || !product.imageURL || !product.description) {
         return res.status(400).json({ message: "Please fill all the fields" });
     } else {
-        console.error("Error!");
+        console.error("All necessary fields populated");
     }
 
     const newProduct = new Product(product);

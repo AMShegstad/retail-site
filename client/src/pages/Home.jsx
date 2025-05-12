@@ -47,6 +47,9 @@ const Home = () => {
     }
   };
 
+  const boxBgColor = useColorModeValue("white", "gray.800");
+  const textColor = useColorModeValue("gray.600", "gray.200");
+
   return (
     <Container maxW="container.xl" py={12}>
       <VStack spacing={8}>
@@ -75,9 +78,8 @@ const Home = () => {
               shadow="lg"
               rounded="lg"
               overflow="hidden"
-              transition="all 0.3s"
+              bg={boxBgColor}
               _hover={{ transform: "translateY(-5px)", shadow: "xl" }}
-              bg={useColorModeValue("white", "gray.800")}
             >
               <Image
                 src={product.imageURL}
@@ -93,7 +95,7 @@ const Home = () => {
                 <Text
                   fontWeight="bold"
                   fontSize="xl"
-                  color={useColorModeValue("gray.600", "gray.200")}
+                  color={textColor}
                   mb={4}
                 >
                   ${product.price}
